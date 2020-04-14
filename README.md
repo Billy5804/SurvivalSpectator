@@ -1,0 +1,2 @@
+# SurvivalSpectator
+A Minecraft Datapack
