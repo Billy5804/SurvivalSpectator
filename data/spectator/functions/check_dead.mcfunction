@@ -1,0 +1,2 @@
+execute if score @s is_dead matches 1 run execute unless score @s check_life matches 0 run function spectator:spawn_location
+execute if score @s check_life matches 0 run execute unless score @s is_dead matches 1 run scoreboard players set @s is_dead 1
