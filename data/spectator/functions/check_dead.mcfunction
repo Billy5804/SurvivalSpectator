@@ -1,2 +1,3 @@
-execute if score @s spec_isDead matches 1 run execute unless score @s spec_checkLife matches 0 run function spectator:spawn_location
+execute if score .hardcoreRespawn spec_admin matches 1 if score @s spec_isDead matches 1 run execute unless score @s spec_checkLife matches 0 run function spectator:spawn_location
 execute if score @s spec_checkLife matches 0 run execute unless score @s spec_isDead matches 1 run scoreboard players set @s spec_isDead 1
+execute if score @s spec_checkLife matches 0 run execute unless score @s spec_hasDied matches 1 run scoreboard players set @s spec_hasDied 1
