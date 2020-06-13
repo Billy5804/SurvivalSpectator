@@ -7,4 +7,4 @@ execute if score @s spec_dim matches 0 in minecraft:overworld run function spect
 execute if score @s spec_dim matches -1 in minecraft:the_nether run function spectator:armor_stand
 execute if score @s spec_dim matches 1 in minecraft:the_end run function spectator:armor_stand
 
-execute if score @s is_dead matches 1 run execute unless score @s check_life matches 0 run scoreboard players set @s is_dead 0
+execute if score @s spec_isDead matches 1 run execute unless score @s spec_checkLife matches 0 run scoreboard players set @s spec_isDead 0

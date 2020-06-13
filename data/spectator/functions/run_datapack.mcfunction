@@ -1,0 +1,1 @@
+execute if score .enableDatapack spec_admin matches 1 run function spectator:run_check
