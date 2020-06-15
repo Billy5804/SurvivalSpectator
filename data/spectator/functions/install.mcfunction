@@ -10,9 +10,8 @@ scoreboard objectives add spec_dim dummy
 scoreboard objectives add spec_admin dummy
 execute unless score .overrideCreative spec_admin = .overrideCreative spec_admin run scoreboard players set .overrideCreative spec_admin 0
 execute unless score .hardcoreRespawn spec_admin = .hardcoreRespawn spec_admin run scoreboard players set .hardcoreRespawn spec_admin 0
-execute unless score .hardcoreMode spec_admin = .hardcoreMode spec_admin run scoreboard players set .hardcoreRespawn spec_admin 0
+execute unless score .hardcoreMode spec_admin = .hardcoreMode spec_admin run scoreboard players set .hardcoreMode spec_admin 0
 execute unless score .overrideGamemode spec_admin = .overrideGamemode spec_admin run scoreboard players set .overrideGamemode spec_admin 0
-execute unless score .enableDatapack spec_admin = .enableDatapack spec_admin run scoreboard players set .enableDatapack spec_admin 1
 execute unless score .spectateTime spec_admin = .spectateTime spec_admin run scoreboard players set .spectateTime spec_admin -1
 
 scoreboard objectives add Spectate trigger
