@@ -37,7 +37,7 @@ execute as @s[nbt={foodLevel:0}] run tellraw @s {"text":"Cannot Spectate While S
 #execute as @s[nbt=!{Motion:[0.0d, -0.0784000015258789d, 0.0d]}, nbt=!{Motion:[0.0d, -0.009800000190734863d, 0.0d]}, nbt=!{Motion:[0.0d, -0.0000000000000000000000000001d, 0.0d]}] run tellraw @s {"text":"Cannot Spectate While In Motion","color":"red"}
 
 #Everything fine switch to Spectator
-execute as @s[nbt={OnGround:1b, Fire:-20s, Air:300s}, nbt=!{foodLevel:0} scores={spec_badEffect=0}] run function spectator:spectator
+execute as @s[nbt={OnGround:1b, Fire:-20s, Air:300s}, nbt=!{foodLevel:0}, scores={spec_badEffect=0}] run function spectator:spectator
 #execute as @s[nbt={OnGround:1b, Fire:-20s, Motion:[0.0d, -0.0784000015258789d, 0.0d]}, scores={spec_badEffect=0}] run function spectator:spectator
 
 #Slow Falling applied
