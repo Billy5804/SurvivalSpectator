@@ -18,5 +18,5 @@ execute as @a if entity @s[gamemode=spectator] unless score @s spec_gamemode mat
 
 execute if score .hardcoreMode spec_admin matches 1 as @a run function spectator:check_dead
 
-execute as @a if score @s logout matches 1 if entity @s[gamemode=spectator] run function spectator:toggle
-execute as @a run scoreboard players reset @s logout
+execute as @a if score @s spec_logout matches 1 if entity @s[gamemode=spectator] run function spectator:toggle
+execute as @a run scoreboard players reset @s spec_logout
