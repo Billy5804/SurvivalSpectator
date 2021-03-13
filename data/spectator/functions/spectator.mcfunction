@@ -1,6 +1,6 @@
-execute store result score @s spec_x run data get entity @s Pos[0] 8
+execute store result score @s spec_x run data get entity @s Pos[0] 64
 execute store result score @s spec_y run data get entity @s Pos[1] 64
-execute store result score @s spec_z run data get entity @s Pos[2] 8
+execute store result score @s spec_z run data get entity @s Pos[2] 64
 #1.15 and below
 execute store result score @s spec_dim run data get entity @s Dimension 
 
